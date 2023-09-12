@@ -1,12 +1,11 @@
-import Head from 'next/head'
-import Image from 'next/image'
-import { Inter } from 'next/font/google'
-import styles from '@/styles/Home.module.css'
+import Head from "next/head";
+import Image from "next/image";
+import { Inter } from "next/font/google";
+import styles from "@/styles/Home.module.css";
+import React from "react";
+import ShoppingCart from "../components/molecules/ShoppingCart";
 
-
-const inter = Inter({ subsets: ['latin'] })
-
-
+const inter = Inter({ subsets: ["latin"] });
 
 const index = () => {
   return (
@@ -18,17 +17,17 @@ const index = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      
       <main>
-
         {/* NAVBAR */}
         <div className={styles.navbar}></div>
 
         {/* HOME */}
         <div className={styles.home}></div>
 
-        {/* NEWS */}
-        <div className={styles.news}></div>
+        {/* CLASICOS */}
+        <div>
+          <ShoppingCart />
+        </div>
 
         {/* CATEGORIES */}
         <div className={styles.categories}></div>
@@ -41,11 +40,9 @@ const index = () => {
 
         {/* FOOTER */}
         <div className={styles.footer}></div>
-
-      
       </main>
     </>
-  )
-}
+  );
+};
 
-export default index
+export default index;
