@@ -2,6 +2,8 @@ import Head from 'next/head'
 import Image from 'next/image'
 import { Inter } from 'next/font/google'
 import styles from '@/styles/Home.module.css'
+import { useState } from "react";
+import ProductList from '@/ProductList';
 
 
 const inter = Inter({ subsets: ['latin'] })
@@ -9,6 +11,10 @@ const inter = Inter({ subsets: ['latin'] })
 
 
 const index = () => {
+  const [allProducts, setAllProducts] = useState([]);
+	const [total, setTotal] = useState(0);
+	const [countProducts, setCountProducts] = useState(0);
+
   return (
     <>
       <Head>
@@ -28,7 +34,12 @@ const index = () => {
         <div className={styles.inicio}></div>
 
         {/* CLÁSICOS */}
-        <div></div>
+        <div><ProductList allProducts={allProducts}
+				setAllProducts={setAllProducts}
+				total={total}
+				setTotal={setTotal}
+				countProducts={countProducts}
+				setCountProducts={setCountProducts} /></div>
 
         {/* NOVEDADES */}
         <div></div>
