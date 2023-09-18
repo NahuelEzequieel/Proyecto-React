@@ -11,16 +11,22 @@ import { useState } from "react";
  
 
 
+
 const inter = Inter({ subsets: ['latin'] })
 
 
 
 const index = () => {
 <<<<<<< HEAD
+<<<<<<< HEAD
  
 =======
   
 >>>>>>> navbar
+=======
+
+
+>>>>>>> tarjetaprueba
   return (
     <>
       <Head>
@@ -34,6 +40,10 @@ const index = () => {
       
       <main>
 
+<<<<<<< HEAD
+=======
+        
+>>>>>>> tarjetaprueba
       
       </main>
     </>
