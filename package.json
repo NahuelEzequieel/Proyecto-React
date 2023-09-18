@@ -12,7 +12,10 @@
     "eslint": "8.46.0",
     "eslint-config-next": "13.4.13",
     "next": "13.4.13",
+<<<<<<< HEAD
     "node": "^20.6.0",
+=======
+>>>>>>> navbar
     "node": "^20.5.1",
     "react": "18.2.0",
     "react-dom": "18.2.0"

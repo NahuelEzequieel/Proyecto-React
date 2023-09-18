@@ -8,13 +8,19 @@ import { useState } from "react";
 
 
 
+ 
+
 
 const inter = Inter({ subsets: ['latin'] })
 
 
 
 const index = () => {
+<<<<<<< HEAD
  
+=======
+  
+>>>>>>> navbar
   return (
     <>
       <Head>
