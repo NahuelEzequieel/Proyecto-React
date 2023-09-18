@@ -1,4 +1,4 @@
-import {data} from "../src/Data"
+import {data} from "../molecules/Data"
 
 
   
