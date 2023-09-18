@@ -3,6 +3,7 @@ import Image from 'next/image'
 import { Inter } from 'next/font/google'
 import styles from '@/styles/Home.module.css'
 import Navbar from '@/components/molecules/Navbar'
+import ProductList from "src/components/molecules/ProductList.js"
 import { useState } from "react";
  
 
@@ -17,16 +18,11 @@ const inter = Inter({ subsets: ['latin'] })
 
 
 const index = () => {
-<<<<<<< HEAD
-<<<<<<< HEAD
- 
-=======
-  
->>>>>>> navbar
-=======
 
+  const [allProducts, setAllProducts] = useState([]);
+	const [total, setTotal] = useState(0);
+	const [countProducts, setCountProducts] = useState(0);
 
->>>>>>> tarjetaprueba
   return (
     <>
       <Head>
@@ -35,18 +31,28 @@ const index = () => {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-
-
-      
-      <main>
-
-<<<<<<< HEAD
-=======
+        <main>
+          <Navbar allProducts={allProducts}
+				setAllProducts={setAllProducts}
+				total={total}
+				setTotal={setTotal}
+				countProducts={countProducts}
+				setCountProducts={setCountProducts}/>
+          <ProductList  allProducts={allProducts}
+				setAllProducts={setAllProducts}
+				total={total}
+				setTotal={setTotal}
+				countProducts={countProducts}
+				setCountProducts={setCountProducts}/>
         
->>>>>>> tarjetaprueba
       
-      </main>
-    </>
+         </main>
+
+      </>
+
+      
+    
+    
   )
 }
 
