@@ -38,15 +38,17 @@ const index = () => {
 				setTotal={setTotal}
 				countProducts={countProducts}
 				setCountProducts={setCountProducts}/>
-          <ProductList  allProducts={allProducts}
+      
+         </main>
+
+         <section>
+         <ProductList  allProducts={allProducts}
 				setAllProducts={setAllProducts}
 				total={total}
 				setTotal={setTotal}
 				countProducts={countProducts}
 				setCountProducts={setCountProducts}/>
-        
-      
-         </main>
+         </section>
 
       </>
 
